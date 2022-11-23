@@ -6,7 +6,7 @@ Routing Machine (OSRM) API; similar to Google Maps.
 
 INPUT (2 columns): 	Origin Zip, Destination Zip
 OUTPUT (8 columns): 	Origin Zip, Destination Zip, Origin Latitude, Origin Longitude, 
-				Destination Latitude, Destination Longitude, Straight-line Distance, 
-				Road Miles
+			Destination Latitude, Destination Longitude, Straight-line Distance, 
+			Road Miles
 
 OSRM API Documentation: http://project-osrm.org/docs/v5.7.0/api/?language=Python#general-options
