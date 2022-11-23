@@ -61,7 +61,7 @@ class US_Route_Distances:
 # Run US_Route_Distances class
 filepath = r'filepath'
 zip_cols, coord_cols = ['Origin Zip', 'Destination Zip'], ['Origin Latitude', 'Origin Longitude', 'Destination Latitude', 'Destination Longitude']
-test = US_Route_Distances(filepath, 'filename')
+test = US_Route_Distances(filepath, 'input_filename')
 test.lat_long(zip_cols, coord_cols)
 test.us_distances(coord_cols)
-test.get_results(filepath, 'filename')
+test.get_results(filepath, 'output_filename')
