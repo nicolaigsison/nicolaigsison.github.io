@@ -53,12 +53,12 @@ class US_Route_Distances:
         self.df["Straight-Line Distance"], self.df["Road Miles"] = straightline_dist, road_miles
         return self.df
 
-    # Exports results to excel file
+    # Export results to .xlsx file
     def get_results(self, filepath, filename):
         self.df = self.df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
         self.df.to_excel(filepath + '\\' + filename + '.xlsx', index=False)
 
-# Run US_Route_Distances Class
+# Run US_Route_Distances class
 filepath = r'filepath'
 zip_cols, coord_cols = ['Origin Zip', 'Destination Zip'], ['Origin Latitude', 'Origin Longitude', 'Destination Latitude', 'Destination Longitude']
 test = US_Route_Distances(filepath, 'filename')
